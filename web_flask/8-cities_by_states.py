@@ -18,8 +18,7 @@ def dispose(exception):
 def states():
     """ Display list of all the states """
     states = storage.all(State)
-    states_list = list(states.values())
-    return render_template('8-cities_by_states.html', state=states_list)
+    return render_template('8-cities_by_states.html', states=states)
 
 
 if __name__ == '__main__':
