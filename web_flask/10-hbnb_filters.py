@@ -19,8 +19,8 @@ def dispose(exception):
 def hbnb_filters():
     states = storage.all(State)
     amenities = storage.all(Amenity)
-    return render_template('10-hbnb_filters.html', states=list(states.values()),
-                           amenities=list(amenities.values()))
+    return render_template('10-hbnb_filters.html', states=states,
+                           amenities=amenities)
 
 
 if __name__ == '__main__':
